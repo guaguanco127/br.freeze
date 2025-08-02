@@ -1,11 +1,11 @@
-# Ableton Max for Live device: br.freeze.1.0  
+# Ableton Max for Live device: br.freeze.1.1  
    
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.freeze.1.0, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze.1.0](https://github.com/guaguanco127/br.freeze.1.0)  
+Repository for br.freeze.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/plugins](https://github.com/guaguanco127/plugins)
 
 These files were created with Max/MSP version 8.5.6. 
@@ -43,7 +43,7 @@ Max For Live brings the power and flexibility of Max to Ableton Live. Max For Li
 2. For Macintosh:  
 Go to your user folder  
 Then Music > Ableton > User Library > Presets > Audio Effects  
-Copy and paste br.freeze.1.0.amxd into that folder
+Copy and paste br.freeze.1.1.amxd into that folder
 
 3. For Windows: \Users\[username]\Documents\Ableton\User Library\Presets\Audio Effects\Max Audio Effect  
 
