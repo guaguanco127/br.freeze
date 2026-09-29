@@ -1,21 +1,30 @@
-# Ableton Max for Live device: br.freeze.1.1  
+# Ableton Max for Live device: br.freeze.1.2  
    
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.freeze.1.1, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.2, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/plugins](https://github.com/guaguanco127/plugins)
 
-These files were created with Max/MSP version 8.5.6. 
+Version 1.2 was updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Table of Contents 
 
+[What's New in 1.2](#whats-new-in-12)  
 [About](#About)  
 [What is a Max for Live Device?](#M4L)  
 [How To Install](#Install)  
 [Version History](#Version)
+
+## What's New in 1.2
+
+- **Much lower CPU.** The spectral processing now switches itself off completely while the freeze is bypassed, and back on the moment you freeze. Resting CPU dropped to about 1%, and about 4% while freezing.
+- **Smooth handover, no gap.** Turning the freeze on keeps the dry sound playing until the frozen sound actually arrives, then crossfades into it. Turning it off crossfades straight back to the dry sound.
+- **Fresher freezes at any sample rate.** The moment a freeze is captured is now worked out from the sample rate, so each freeze contains only sound from after you pressed it.
+- **Gate mode fixed.** In Gate mode, no dry signal is heard while the freeze is bypassed.
+- **Lighter transient detector** (it polls the input less often; detection speed is unchanged).
 
 ## <a name="About"></a>About
 
@@ -43,7 +52,7 @@ Max For Live brings the power and flexibility of Max to Ableton Live. Max For Li
 2. For Macintosh:  
 Go to your user folder  
 Then Music > Ableton > User Library > Presets > Audio Effects  
-Copy and paste br.freeze.1.1.amxd into that folder
+Copy and paste br.freeze.1.2.amxd into that folder
 
 3. For Windows: \Users\[username]\Documents\Ableton\User Library\Presets\Audio Effects\Max Audio Effect  
 
@@ -55,6 +64,7 @@ Copy and paste br.freeze.1.1.amxd into that folder
 
 ## <a name="Version"></a>Version History  
 
+Version 1.2 lowered CPU use (the spectral processing switches off while bypassed), made the dry/freeze handover gap-free, timed each freeze from the sample rate, fixed Gate mode, and lightened the transient detector.  
 Version 1.1 fixed an issue with stereo and using multiple instances of the abstraction 
     
 
