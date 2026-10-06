@@ -1,5 +1,6 @@
 {
     "patcher": {
+"description" : "br.freeze.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
         "fileversion": 1,
         "appversion": {
             "major": 9,
@@ -14,6 +15,8 @@
         "openinpresentation": 1,
         "devicewidth": 181.0,
         "boxes": [
+{"box": {"id": "obj-signature", "maxclass": "comment", "numinlets": 1, "numoutlets": 0, "patching_rect": [505.0, 26.0, 520.0, 40.0], "text": "br.freeze.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/", "linecount": 2}},
+
             {
                 "box": {
                     "activeneedlecolor": [ 1.0, 1.0, 1.0, 1.0 ],
@@ -307,7 +310,7 @@
                             },
                             {
                                 "box": {
-                                    "id": "obj-2",
+                                    "id": "obj-2", "hint" : "br.freeze.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/", "annotation" : "br.freeze.abs.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,

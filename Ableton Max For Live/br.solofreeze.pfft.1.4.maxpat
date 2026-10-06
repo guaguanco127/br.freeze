@@ -1,5 +1,6 @@
 {
 	"patcher": {
+"description" : "br.solofreeze.pfft.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/",
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
@@ -20,6 +21,8 @@
 			15.0
 		],
 		"boxes": [
+{"box": {"id": "obj-signature", "maxclass": "comment", "numinlets": 1, "numoutlets": 0, "patching_rect": [459.0, 54.0, 520.0, 40.0], "text": "br.solofreeze.pfft.1.4 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/", "linecount": 2}},
+
 			{
 				"box": {
 					"fontname": "Arial",
