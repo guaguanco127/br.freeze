@@ -91,7 +91,6 @@ Version 1.1 fixed an issue with stereo and using multiple instances of the abstr
 
  
 
+## <a name="Credits"></a>Credits
 
-
-
-
+The spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from "A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.
