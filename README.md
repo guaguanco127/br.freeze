@@ -1,6 +1,6 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.freeze.1.4
+## br.freeze.1.5
 
 
 
@@ -9,14 +9,15 @@ By Brian Riordan
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
 
-Repository for br.freeze.1.4, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.5, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)  
 
 
-Versions 1.2, 1.3 and 1.4 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
+Versions 1.2 through 1.5 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.5](#whats-new-in-15)  
 [What's New in 1.4](#whats-new-in-14)  
 [What's New in 1.3](#whats-new-in-13)  
 [What's New in 1.2](#whats-new-in-12)  
@@ -24,6 +25,15 @@ Versions 1.2, 1.3 and 1.4 were updated with Max 9. Version 1.1 was created with 
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.freeze/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.freeze/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP  
 
+
+## What's New in 1.5
+
+- **Dry/Wet.** A new Dry/Wet dial (0 - 100 %). It only acts while the freeze is on: lower values keep the dry sound playing under the freeze. At 100 % (the default) it sounds exactly like 1.4. Bypass is unchanged: Insert still passes the dry sound, Gate stays silent. The blend is equal-power and every move glides over 20 ms, so it never clicks.
+- **State outlet** (abstraction only): a new last outlet sends every setting as a named message the moment it changes (`freeze`, `mode`, `detect`, `sensitivity`, `feedback`, `drywet`). See [State outlet](https://github.com/guaguanco127/br.freeze/tree/main/MaxMSP%20Abstraction#State).
+- Dry/Wet is a new last inlet; every other inlet and the L/R outlets are unchanged, so 1.5 swaps in for 1.4 without rewiring.
+- **Example patch:** _br.freeze.example.1.5 with three tabs: freeze (pick a source and freeze it by hand), layers (driven by messages into the inlets; each attack adds a layer) and State outlet.
+- The controls have readable names (Freeze, Retrigger, Mix Mode, Detect, Sensitivity, Feedback, Dry/Wet), so presets and pattr show them clearly.
+- The helper file is still **br.solofreeze.pfft.1.4**.
 
 ## What's New in 1.4
 
@@ -61,17 +71,15 @@ Only works as an abstraction or a device. External objects and RNBO not availabl
 **Transient Detect:** When both "Freeze" and "Transient Detect" are on, the freeze will occur automatically based on the transient detection sensitivity settings. Each new attack triggers one freeze; a held or sustained note does not keep re-triggering, and the freeze captures the attack itself.   
 **Transient Detect Sensitivity:** When both "Freeze" and "Transient Detect" are on, this sets how sudden a jump in level counts as an attack. Between 0. and 1.: 0. is the lowest sensitivity (only strong, sudden attacks), 1. is the most sensitive (softer attacks count too). The default is 0.5.  
 **Feedback:** How much of the current freeze carries into the next Retrigger or detected attack. Between 0. and 1.: 0. replaces the freeze (no feedback), 1. blends the current freeze and the new sound 50/50. The default is 0.  
+**Dry/Wet:** How much of the freeze you hear while it is on. Between 0 and 100 %: 100 is only the freeze, lower values keep the dry sound playing under it (equal-power blend). It does nothing while bypassed. The default is 100.  
  
 ## <a name="Version"></a>Version History  
 
+Version 1.5 added Dry/Wet (only while frozen), a State outlet and an example patch.  
 Version 1.4 added Feedback: each new freeze can blend with the current one (up to 50/50) instead of replacing it.  
 Version 1.3 replaced the transient detector with an attack (onset) detector: one freeze per attack, held notes stay frozen, and each automatic freeze holds the attack.  
 Version 1.2 lowered CPU use (the spectral processing switches off while bypassed), made the dry/freeze handover gap-free, timed each freeze from the sample rate, fixed Gate mode, and lightened the transient detector.  
 Version 1.1 fixed an issue with stereo and using multiple instances of the abstraction 
-
-## <a name="Credits"></a>Credits
-
-The spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from "A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.
 
 ## <a name="Credits"></a>Credits
 
