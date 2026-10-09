@@ -1,17 +1,18 @@
-# Ableton Max for Live device: br.freeze.1.4  
+# Ableton Max for Live device: br.freeze.1.5  
    
 By Brian Riordan  
 [guaguanco127@gmail.com](mailto:guaguanco127@gmail.com)  
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.freeze.1.4, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.5, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
-Versions 1.2, 1.3 and 1.4 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
+Versions 1.2 through 1.5 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Table of Contents 
 
+[What's New in 1.5](#whats-new-in-15)  
 [What's New in 1.4](#whats-new-in-14)  
 [What's New in 1.3](#whats-new-in-13)  
 [What's New in 1.2](#whats-new-in-12)  
@@ -19,6 +20,11 @@ Versions 1.2, 1.3 and 1.4 were updated with Max 9. Version 1.1 was created with 
 [What is a Max for Live Device?](#M4L)  
 [How To Install](#Install)  
 [Version History](#Version)
+
+## What's New in 1.5
+
+- **Dry/Wet.** A new Dry/Wet dial (0 - 100 %). It only acts while the freeze is on: lower values keep the dry sound playing under the freeze. At 100 % (the default) it sounds exactly like 1.4. Bypass is unchanged: Insert still passes the dry sound, Gate stays silent. The blend is equal-power and every move glides over 20 ms, so it never clicks.
+- The helper file is still **br.solofreeze.pfft.1.4**.
 
 ## What's New in 1.4
 
@@ -56,6 +62,7 @@ Only works as an abstraction or a device. External objects and RNBO not availabl
 **Transient Detect:** When both "Freeze" and "Transient Detect" are on, the freeze will occur automatically based on the transient detection sensitivity settings. Each new attack triggers one freeze; a held or sustained note does not keep re-triggering, and the freeze captures the attack itself.   
 **Transient Detect Sensitivity:** When both "Freeze" and "Transient Detect" are on, this sets how sudden a jump in level counts as an attack. Between 0. and 1.: 0. is the lowest sensitivity (only strong, sudden attacks), 1. is the most sensitive (softer attacks count too). The default is 0.5.  
 **Feedback:** How much of the current freeze carries into the next Retrigger or detected attack. Between 0. and 1.: 0. replaces the freeze (no feedback), 1. blends the current freeze and the new sound 50/50. The default is 0.  
+**Dry/Wet:** How much of the freeze you hear while it is on. Between 0 and 100 %: 100 is only the freeze, lower values keep the dry sound playing under it (equal-power blend). It does nothing while bypassed. The default is 100.  
 
 
 ## <a name="M4L"></a>What Is a Max For Live Device?
@@ -69,7 +76,7 @@ Max For Live brings the power and flexibility of Max to Ableton Live. Max For Li
 2. For Macintosh:  
 Go to your user folder  
 Then Music > Ableton > User Library > Presets > Audio Effects  
-Copy and paste br.freeze.1.4.amxd into that folder
+Copy and paste br.freeze.1.5.amxd into that folder
 
 3. For Windows: \Users\[username]\Documents\Ableton\User Library\Presets\Audio Effects\Max Audio Effect  
 
@@ -81,6 +88,7 @@ Copy and paste br.freeze.1.4.amxd into that folder
 
 ## <a name="Version"></a>Version History  
 
+Version 1.5 added Dry/Wet (only while frozen).  
 Version 1.4 added Feedback: each new freeze can blend with the current one (up to 50/50) instead of replacing it.  
 Version 1.3 replaced the transient detector with an attack (onset) detector: one freeze per attack, held notes stay frozen, and each automatic freeze holds the attack.  
 Version 1.2 lowered CPU use (the spectral processing switches off while bypassed), made the dry/freeze handover gap-free, timed each freeze from the sample rate, fixed Gate mode, and lightened the transient detector.  
