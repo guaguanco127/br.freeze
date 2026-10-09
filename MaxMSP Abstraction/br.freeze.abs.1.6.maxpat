@@ -18,7 +18,7 @@
         "openrectmode": 0,
         "openinpresentation": 1,
         "devicewidth": 205.0,
-        "description": "br.freeze.abs.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
+        "description": "br.freeze.abs.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
         "boxes": [
             {
                 "box": {
@@ -93,7 +93,7 @@
                         520.0,
                         87.0
                     ],
-                    "text": "br.freeze.abs.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
+                    "text": "br.freeze.abs.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
                 }
             },
             {
@@ -438,7 +438,7 @@
                             },
                             {
                                 "box": {
-                                    "comment": "Mix Modes, 0 = insert, 1 = gate",
+                                    "comment": "Mix Modes, 0 = thru, 1 = aux",
                                     "id": "obj-34",
                                     "index": 5,
                                     "maxclass": "inlet",
@@ -585,8 +585,8 @@
                             },
                             {
                                 "box": {
-                                    "annotation": "br.freeze.abs.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
-                                    "hint": "br.freeze.abs.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
+                                    "annotation": "br.freeze.abs.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
+                                    "hint": "br.freeze.abs.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-Fran\u00e7ois Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
                                     "id": "obj-2",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
@@ -2193,7 +2193,7 @@
                                         300.0,
                                         62.0
                                     ],
-                                    "text": "Dry/Wet (equal power): wet amount scales the freeze envelope; dry amount x (1 - dry fade) adds the dry back only while frozen, so bypass (Insert dry / Gate silence) is unchanged and 100 % = 1.4."
+                                    "text": "Dry/Wet (equal power): wet amount scales the freeze envelope; dry amount x (1 - dry fade) adds the dry back only while frozen, so bypass (Thru dry / Aux silence) is unchanged and 100 % = 1.4."
                                 }
                             },
                             {
@@ -3936,8 +3936,8 @@
                             "parameter_type": 2
                         }
                     },
-                    "text": "Insert",
-                    "texton": "Gate",
+                    "text": "Thru",
+                    "texton": "Aux",
                     "varname": "Mix Mode"
                 }
             },
@@ -4080,7 +4080,7 @@
             },
             {
                 "box": {
-                    "comment": "Mix Mode (Int) 0 = Insert, 1 = Gate. Default 0",
+                    "comment": "Mix Mode (Int) 0 = Thru, 1 = Aux. Default 0",
                     "id": "obj-10",
                     "index": 5,
                     "maxclass": "inlet",

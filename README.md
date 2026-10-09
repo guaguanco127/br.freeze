@@ -1,6 +1,6 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.freeze.1.5
+## br.freeze.1.6
 
 
 
@@ -9,14 +9,15 @@ By Brian Riordan
 [brianriordanmusic@gmail.com](mailto:brianriordanmusic@gmail.com)  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
 
-Repository for br.freeze.1.5, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.6, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)  
 
 
-Versions 1.2 through 1.5 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
+Versions 1.2 through 1.6 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.6](#whats-new-in-16)  
 [What's New in 1.5](#whats-new-in-15)  
 [What's New in 1.4](#whats-new-in-14)  
 [What's New in 1.3](#whats-new-in-13)  
@@ -25,6 +26,10 @@ Versions 1.2 through 1.5 were updated with Max 9. Version 1.1 was created with M
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.freeze/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.freeze/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP  
 
+
+## What's New in 1.6
+
+- **Mix Mode is now "Thru" / "Aux" (was "Insert" / "Gate").** "Thru" (0) lets the dry sound pass while the effect is off; "Aux" (1) is silent until you turn it on, for use on a send/return. Only the names changed: the numbers, the default and the sound are exactly as in 1.5, so 1.6 swaps in without rewiring.
 
 ## What's New in 1.5
 
@@ -67,7 +72,7 @@ Only works as an abstraction or a device. External objects and RNBO not availabl
   
 **Freeze:** On/Off, Bypass or Freeze.  
 **Retrigger:** When the freeze is on, this will freeze the current stereo signal.  
-**Mix Modes:** "Insert" interrupts the signal with the freeze, while "Gate" only allows the freeze to sound without passing through the dry signal during bypass.    
+**Mix Mode:** "Thru" (the default) lets the dry sound pass through while the freeze is bypassed, and the freeze takes over when you freeze. Use it on a track. "Aux" is silent while bypassed, so you only hear the freeze. Use it on a send/return.    
 **Transient Detect:** When both "Freeze" and "Transient Detect" are on, the freeze will occur automatically based on the transient detection sensitivity settings. Each new attack triggers one freeze; a held or sustained note does not keep re-triggering, and the freeze captures the attack itself.   
 **Transient Detect Sensitivity:** When both "Freeze" and "Transient Detect" are on, this sets how sudden a jump in level counts as an attack. Between 0. and 1.: 0. is the lowest sensitivity (only strong, sudden attacks), 1. is the most sensitive (softer attacks count too). The default is 0.5.  
 **Feedback:** How much of the current freeze carries into the next Retrigger or detected attack. Between 0. and 1.: 0. replaces the freeze (no feedback), 1. blends the current freeze and the new sound 50/50. The default is 0.  
@@ -75,6 +80,7 @@ Only works as an abstraction or a device. External objects and RNBO not availabl
  
 ## <a name="Version"></a>Version History  
 
+Version 1.6 (10-09-2026) renamed Mix Mode to Thru / Aux.  
 Version 1.5 added Dry/Wet (only while frozen), a State outlet and an example patch.  
 Version 1.4 added Feedback: each new freeze can blend with the current one (up to 50/50) instead of replacing it.  
 Version 1.3 replaced the transient detector with an attack (onset) detector: one freeze per attack, held notes stay frozen, and each automatic freeze holds the attack.  
@@ -83,4 +89,4 @@ Version 1.1 fixed an issue with stereo and using multiple instances of the abstr
 
 ## <a name="Credits"></a>Credits
 
-The spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from "A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.
+The spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from "A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.
