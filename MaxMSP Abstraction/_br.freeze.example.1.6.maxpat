@@ -10,7 +10,7 @@
         },
         "classnamespace": "box",
         "rect": [ 85.0, 104.0, 1000.0, 640.0 ],
-        "description": "_br.freeze.example.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
+        "description": "_br.freeze.example.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
         "showontab": 1,
         "boxes": [
             {
@@ -23,7 +23,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 206.0, 399.0, 668.0, 74.0 ],
-                    "text": "_br.freeze.example.1.5 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Insert/Gate, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
+                    "text": "_br.freeze.example.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
                 }
             },
             {
@@ -86,7 +86,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 15.0, 206.0, 560.0, 20.0 ],
-                    "text": "br.solofreeze.pfft.1.4.maxpat must sit in the same folder as br.freeze.abs.1.5.maxpat."
+                    "text": "br.solofreeze.pfft.1.4.maxpat must sit in the same folder as br.freeze.abs.1.6.maxpat."
                 }
             },
             {
@@ -209,7 +209,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 15.0, 273.0, 237.0, 74.0 ],
-                                    "text": "Insert: the dry sound plays while the freeze is bypassed. Gate: silence until you freeze. Dry/Wet works only while frozen: lower keeps the dry playing under the freeze (100 % = only the freeze)."
+                                    "text": "Thru: the dry sound plays while the freeze is bypassed. Aux: silence until you freeze. Dry/Wet works only while frozen: lower keeps the dry playing under the freeze (100 % = only the freeze)."
                                 }
                             },
                             {
@@ -1103,7 +1103,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 426.0, 96.0, 150.0, 20.0 ],
-                                    "text": "br.freeze.abs.1.5"
+                                    "text": "br.freeze.abs.1.6"
                                 }
                             },
                             {
@@ -1117,7 +1117,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "br.freeze.abs.1.5.maxpat",
+                                    "name": "br.freeze.abs.1.6.maxpat",
                                     "numinlets": 9,
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
@@ -1335,7 +1335,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 15.0, 51.0, 290.0, 47.0 ],
-                                    "text": "Everything here goes into the inlets as messages, and the panel follows. Mix Mode is set to Gate, so only the freeze sounds."
+                                    "text": "Everything here goes into the inlets as messages, and the panel follows. Mix Mode is set to Aux, so only the freeze sounds."
                                 }
                             },
                             {
@@ -1655,7 +1655,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 738.0, 244.0, 40.0, 20.0 ],
-                                    "text": "Gate"
+                                    "text": "Aux"
                                 }
                             },
                             {
@@ -1719,7 +1719,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "br.freeze.abs.1.5.maxpat",
+                                    "name": "br.freeze.abs.1.6.maxpat",
                                     "numinlets": 9,
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
@@ -1737,7 +1737,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 620.0, 360.0, 150.0, 20.0 ],
-                                    "text": "br.freeze.abs.1.5"
+                                    "text": "br.freeze.abs.1.6"
                                 }
                             },
                             {
@@ -2117,7 +2117,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 105.0, 270.0, 188.0, 20.0 ],
-                                    "text": "mode (0 Insert, 1 Gate)"
+                                    "text": "mode (0 Thru, 1 Aux)"
                                 }
                             },
                             {
