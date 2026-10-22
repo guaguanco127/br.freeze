@@ -1,6 +1,6 @@
 # Max/MSP Patches, Abstractions, Externals, RNBO, VSTs, and Ableton Max for Live 
 
-## br.freeze.1.6
+## br.freeze.1.7
 
 
 
@@ -9,14 +9,15 @@ guaguanco127 [at] gmail [dot] com
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
 
-Repository for br.freeze.1.6, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.7, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)  
 
 
-Versions 1.2 through 1.6 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
+Versions 1.2 through 1.7 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Links
 
+[What's New in 1.7](#whats-new-in-17)  
 [What's New in 1.6](#whats-new-in-16)  
 [What's New in 1.5](#whats-new-in-15)  
 [What's New in 1.4](#whats-new-in-14)  
@@ -26,6 +27,11 @@ Versions 1.2 through 1.6 were updated with Max 9. Version 1.1 was created with M
 [Ableton Max for Live Device](https://github.com/guaguanco127/br.freeze/tree/main/Ableton%20Max%20For%20Live) To use inside of Ableton Suite   
 [Max/MSP Abstraction](https://github.com/guaguanco127/br.freeze/tree/main/MaxMSP%20Abstraction) To use as an abstraction within Max/MSP  
 
+
+## What's New in 1.7
+
+- **Frozen Max for Live device.** The device now carries its helper files inside it, so copying the .amxd alone is enough.
+- **One version number.** Every file in this repository is now 1.7, including the helper files. Nothing changed in the sound.
 
 ## What's New in 1.6
 
@@ -68,7 +74,7 @@ This is a spectral Max/MSP abstraction, and Ableton Max for Live device that all
 
 Currently works in any sample rate or bit depth.
 
-Only works as an abstraction or a device. External objects and RNBO not available yet. An extremely important file is included in each folder called "br.solofreeze.pfft.1.4" do not move or delete this file until you follow all instructions for installation. 
+Only works as an abstraction or a device. External objects and RNBO not available yet. An extremely important file is included in each folder called "br.solofreeze.pfft.1.7" do not move or delete this file until you follow all instructions for installation. 
   
 **Freeze:** On/Off, Bypass or Freeze.  
 **Retrigger:** When the freeze is on, this will freeze the current stereo signal.  
@@ -80,6 +86,7 @@ Only works as an abstraction or a device. External objects and RNBO not availabl
  
 ## <a name="Version"></a>Version History  
 
+Version 1.7 (10-21-2026) froze the Max for Live device and gave every file in the repository the same version number.  
 Version 1.6 (10-09-2026) renamed Mix Mode to Thru / Aux.  
 Version 1.5 added Dry/Wet (only while frozen), a State outlet and an example patch.  
 Version 1.4 added Feedback: each new freeze can blend with the current one (up to 50/50) instead of replacing it.  

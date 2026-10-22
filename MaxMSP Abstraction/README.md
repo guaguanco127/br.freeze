@@ -1,17 +1,18 @@
-# Max/MSP Abstraction: br.freeze.abs.1.6  
+# Max/MSP Abstraction: br.freeze.abs.1.7  
    
 By Brian Riordan  
 guaguanco127 [at] gmail [dot] com  
 brianriordanmusic [at] gmail [dot] com  
 [https://www.brianriordanmusic.com/](https://www.brianriordanmusic.com/) 
   
-Repository for br.freeze.1.6, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
+Repository for br.freeze.1.7, with all related files, can be found here: [https://github.com/guaguanco127/br.freeze](https://github.com/guaguanco127/br.freeze)  
 Additional programs can be found here: [https://github.com/guaguanco127/br.max](https://github.com/guaguanco127/br.max)
 
-Versions 1.2 through 1.6 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
+Versions 1.2 through 1.7 were updated with Max 9. Version 1.1 was created with Max/MSP 8.5.6. 
 
 ## Table of Contents 
 
+[What's New in 1.7](#whats-new-in-17)  
 [What's New in 1.6](#whats-new-in-16)  
 [What's New in 1.5](#whats-new-in-15)  
 [What's New in 1.4](#whats-new-in-14)  
@@ -26,6 +27,11 @@ Versions 1.2 through 1.6 were updated with Max 9. Version 1.1 was created with M
 [Version History](#Version) 
 
  
+
+## What's New in 1.7
+
+- **Frozen Max for Live device.** The device now carries its helper files inside it, so copying the .amxd alone is enough.
+- **One version number.** Every file in this repository is now 1.7, including the helper files. Nothing changed in the sound.
 
 ## What's New in 1.6
 
@@ -68,7 +74,7 @@ This is a spectral Max/MSP abstraction, and Ableton Max for Live device that all
 
 Currently works in any sample rate or bit depth.
 
-Only works as an abstraction or a device. External objects and RNBO not available yet. An extremely important file is included in each folder called "br.solofreeze.pfft.1.4" do not move or delete this file until you follow all instructions for installation. 
+Only works as an abstraction or a device. External objects and RNBO not available yet. An extremely important file is included in each folder called "br.solofreeze.pfft.1.7" do not move or delete this file until you follow all instructions for installation. 
   
 **Freeze:** On/Off, Bypass or Freeze.  
 **Retrigger:** When the freeze is on, this will freeze the current stereo signal.      
@@ -88,13 +94,13 @@ By saving your logic in an abstraction, you can create modules that can be used 
 
 1. Make sure you have Max 9 installed in your computer. And, make sure you are using a Max patch that is inside of a folder.  
 
-2. Copy and paste br.freeze.abs.1.6.maxpat inside of the same folder as the Max patch you are using. To try it first, copy _br.freeze.example.1.6.maxpat too.
+2. Copy and paste br.freeze.abs.1.7.maxpat inside of the same folder as the Max patch you are using. To try it first, copy _br.freeze.example.1.7.maxpat too.
 
-3. Also, copy and paste the file called br.solofreeze.pfft.1.4 into the same folder. If this file is already there, then there is no reason to copy and paste it. **The abstraction will not work without this file.**     
+3. Also, copy and paste the file called br.solofreeze.pfft.1.7 into the same folder. If this file is already there, then there is no reason to copy and paste it. **The abstraction will not work without this file.**     
 
-4. In the Max patch you are using, create an object called br.freeze.abs.1.6 
+4. In the Max patch you are using, create an object called br.freeze.abs.1.7 
 
-5. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects featured inside the abstraction. To do this, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select the br.freeze.abs.1.6.maxpat located within the same folder as your project. 
+5. Alternatively, you could also create this inside of a bpatcher object and use all of the preset UI objects featured inside the abstraction. To do this, create a bpatcher object. Then, go inside of its inspector, select "choose" next to "Patcher File" and select the br.freeze.abs.1.7.maxpat located within the same folder as your project. 
 
 
 ## <a name="Use"></a>How To Use
@@ -136,10 +142,11 @@ Each message carries the same value its inlet takes, so a State message can go s
 
 ## <a name="Example"></a>Example Patch
 
-Open _br.freeze.example.1.6.maxpat (keep it in the same folder as br.freeze.abs.1.6 and br.solofreeze.pfft.1.4). The first page introduces br.freeze; the tabs at the top hold the examples. Turn on the audio with the toggle, then raise the gain slider, which starts muted.
+Open _br.freeze.example.1.7.maxpat (keep it in the same folder as br.freeze.abs.1.7 and br.solofreeze.pfft.1.7). The first page introduces br.freeze; the tabs at the top hold the examples. Turn on the audio with the toggle, then raise the gain slider, which starts muted.
 
 ## <a name="Version"></a>Version History  
 
+Version 1.7 (10-21-2026) froze the Max for Live device and gave every file in the repository the same version number.  
 Version 1.6 (10-09-2026) renamed Mix Mode to Thru / Aux.  
 Version 1.5 added Dry/Wet (only while frozen), a State outlet and an example patch.  
 Version 1.4 added Feedback: each new freeze can blend with the current one (up to 50/50) instead of replacing it.  

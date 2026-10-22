@@ -10,7 +10,7 @@
         },
         "classnamespace": "box",
         "rect": [ 85.0, 104.0, 1000.0, 640.0 ],
-        "description": "_br.freeze.example.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
+        "description": "_br.freeze.example.1.7 -- Created by Brian Riordan, guaguanco127@gmail.com -- https://github.com/guaguanco127/ -- Credits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan.",
         "showontab": 1,
         "boxes": [
             {
@@ -23,7 +23,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 206.0, 399.0, 668.0, 74.0 ],
-                    "text": "_br.freeze.example.1.6 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
+                    "text": "_br.freeze.example.1.7 -- Created by Brian Riordan, guaguanco127@gmail.com\nhttps://github.com/guaguanco127/\nCredits: the spectral freeze is built on Jean-François Charles' freeze-frame technique (one FFT frame captured with jit.catch~ inside pfft~), from \"A Tutorial on Spectral Sound Processing Using Max/MSP and Jitter\", Computer Music Journal 32(3), 2008. Retrigger, Thru/Aux, the attack detector, Feedback blending and the low-CPU switching are by Brian Riordan."
                 }
             },
             {
@@ -86,7 +86,7 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 15.0, 206.0, 560.0, 20.0 ],
-                    "text": "br.solofreeze.pfft.1.4.maxpat must sit in the same folder as br.freeze.abs.1.6.maxpat."
+                    "text": "br.solofreeze.pfft.1.7.maxpat must sit in the same folder as br.freeze.abs.1.7.maxpat."
                 }
             },
             {
@@ -1103,7 +1103,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 426.0, 96.0, 150.0, 20.0 ],
-                                    "text": "br.freeze.abs.1.6"
+                                    "text": "br.freeze.abs.1.7"
                                 }
                             },
                             {
@@ -1117,7 +1117,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "br.freeze.abs.1.6.maxpat",
+                                    "name": "br.freeze.abs.1.7.maxpat",
                                     "numinlets": 9,
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
@@ -1719,7 +1719,7 @@
                                     "lockeddragscroll": 0,
                                     "lockedsize": 0,
                                     "maxclass": "bpatcher",
-                                    "name": "br.freeze.abs.1.6.maxpat",
+                                    "name": "br.freeze.abs.1.7.maxpat",
                                     "numinlets": 9,
                                     "numoutlets": 3,
                                     "offset": [ 0.0, 0.0 ],
@@ -1737,7 +1737,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 0,
                                     "patching_rect": [ 620.0, 360.0, 150.0, 20.0 ],
-                                    "text": "br.freeze.abs.1.6"
+                                    "text": "br.freeze.abs.1.7"
                                 }
                             },
                             {
