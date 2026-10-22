@@ -65,7 +65,7 @@ This is a spectral Max/MSP abstraction, and Ableton Max for Live device that all
 
 Currently works in any sample rate or bit depth.
 
-Only works as an abstraction or a device. External objects and RNBO not available yet. An extremely important file is included in each folder called "br.solofreeze.pfft.1.7" do not move or delete this file until you follow all instructions for installation. 
+Only works as an abstraction or a device. External objects and RNBO not available yet. The abstraction needs the file "br.solofreeze.pfft.1.7" in the same folder (it is in the MaxMSP Abstraction folder); the Max for Live device is frozen and already contains it. 
   
 **Freeze:** On/Off, Bypass or Freeze.  
 **Retrigger:** When the freeze is on, this will freeze the current stereo signal.  
